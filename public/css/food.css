@@ -9,9 +9,14 @@
 .bg-lgray{
     background-color: #938e94;
 }
+.bg-y{
+    color: #e1a32e;
+}
+.min-height{
+    min-height: 395px;
+}
 .text-y{
     color: #e1a32e;
-
 }
 
 .h1-f-photo{
@@ -141,4 +146,9 @@
 }
 .h-d-photo-2 img:hover{
     cursor: pointer;
+}
+@media(max-width: 995px){
+    .gear-img{
+        display: none;
+    }
 }

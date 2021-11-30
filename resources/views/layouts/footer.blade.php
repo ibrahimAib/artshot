@@ -1,17 +1,17 @@
-<div class="border-top bg-dark">
+<div class="border-top bg-dgray">
     <div class="container">
         <div class="py-5 d-flex w-100">
             <div class="">
-                <a href="">
+                <a class="mr-2" href="">
                     <img src="image/icon/insta.svg" alt="">
                 </a>
                 <a href="">
                     <img src="image/icon/whats.svg" alt="">
                 </a>
-                <span>&nbsp;&nbsp;&nbsp;Ibrahim Bin Ali  &copy;  2021</span>
+                <span class="text-light">&nbsp;&nbsp;&nbsp;ART SHOT  <span class="text-y">&copy;</span>  2021</span>
             </div>
             <div class="ml-auto">
-                <a href="/contact" class="btn btn-warning">Contact me</a>
+                <a href="/contact" class="btn bg-y">Contact me</a>
             </div>
         </div>
     </div>

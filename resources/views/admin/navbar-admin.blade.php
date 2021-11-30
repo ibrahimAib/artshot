@@ -20,7 +20,7 @@
                     <!-- Authentication Links -->
                     <li class="nav-item"><a href="/admin" class="nav-link">PHOTO</a></li>
                     <li class="nav-item"><a href="/adgear" class="nav-link">GEAR</a></li>
-                    <li class="nav-item"><a href="/adsocial" class="nav-link">SOCIAL</a></li>
+                    <li class="nav-item"><a href="/adcontact" class="nav-link">CONTACT</a></li>
                     <li class="nav-item"><a href="/admins" class="nav-link">Admins</a></li>
                     <li class="nav-item">
                         <form action="/addadmin" method="post">

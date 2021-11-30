@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{{ asset('css/food.css') }}">
 </head>
 <body class="bg-light">
-
+@include('layouts.navbar')
 @yield('content')
 @include('layouts.footer')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

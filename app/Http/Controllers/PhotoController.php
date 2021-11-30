@@ -112,4 +112,12 @@ class PhotoController extends Controller
     {
         return view('gear');
     }
+    public function contact()
+    {
+        return view('contact');
+    }
+    public function about()
+    {
+        return view('about');
+    }
 }

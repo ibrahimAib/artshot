@@ -1,5 +1,5 @@
 @extends('admin.app-admin')
-
+@section('title', 'artshot - admins')
 @section('content')
 
 <div class="container mt-5">
@@ -13,15 +13,15 @@
        </tr>
 @foreach ($users as $user)
         <tr>
-            <th class=" text-left border" style="width: 10px;">{{$user->id}}</th>
-            <th class=" text-left border border-right-0" style="width: 250px">{{$user->name}}</th>
-            <th class=" text-left border border-right-0 border-left-0" style="width: 450px">{{$user->email}}</th>
-            <th class=" text-left border border-left-0" style="width: 50px">
+            <td class=" text-left border" style="width: 10px;">{{$user->id}}</td>
+            <td class=" text-left border border-right-0" style="width: 250px">{{$user->name}}</td>
+            <td class=" text-left border border-right-0 border-left-0" style="width: 450px">{{$user->email}}</td>
+            <td class=" text-left border border-left-0" style="width: 50px">
                 <div>
                     <img src="image/icon/trash.svg" alt="">    
                     <img src="image/icon/pencil.svg" alt="">    
                 </div>    
-            </th>
+            </td>
        </tr>
        @endforeach
     </table>

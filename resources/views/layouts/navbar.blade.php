@@ -17,7 +17,7 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 <li class="nav-item"><a href="/photo" class="nav-link">PHTOT</a></li>
-                <li class="nav-item"><a href="/video" class="nav-link">VIDEO</a></li>
+                <li class="nav-item"><a href="/videos" class="nav-link">VIDEO</a></li>
                 <li class="nav-item"><a href="/mygear" class="nav-link">MY GEAR</a></li>
                 <li class="nav-item"><a href="/contact" class="nav-link">CONTACT</a></li>
                 <li class="nav-item"><a href="/about" class="nav-link">ABOUT</a></li>

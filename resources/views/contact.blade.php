@@ -1,8 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<section class="py-5 min-height">
+<section class="min-height">
 
-    
 </section>
 @endsection

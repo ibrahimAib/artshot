@@ -14,7 +14,6 @@ class VideoController extends Controller
      */
     public function index()
     {
-        echo 'hello';
         $videos = Video::all();
         return view('video', compact('videos'));
     }

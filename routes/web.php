@@ -30,6 +30,8 @@ Route::get('/home', function () {
 // photo Controller
 Route::resource('/photo', PhotoController::class);
 Route::get('/mygear', [PhotoController::class, 'gear']);
+Route::get('/contact', [PhotoController::class, 'contact']);
+Route::get('/about', [PhotoController::class, 'about']);
 
 Route::resource('/videos', VideoController::class);
 // Admin Controller
