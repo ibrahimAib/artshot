@@ -1,0 +1,144 @@
+.bg-image{
+    height: 600px;
+    background-image: url(public/storage/photos/1.jpg);
+    background-repeat: no-repeat;
+}
+.bg-dgray{
+    background-color: #332c2d;
+}
+.bg-lgray{
+    background-color: #938e94;
+}
+.text-y{
+    color: #e1a32e;
+
+}
+
+.h1-f-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.h1-f-photo img {
+    max-width: 100%;
+    height: auto;
+}
+.h1-f-photo img:hover{
+    /* cursor: pointer; */
+}
+.shad{
+    box-shadow: 0px 0px 3px rgb(116, 116, 116);
+}
+.h2-f-photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.h2-f-photo img {
+    max-width: 100%;
+    height: auto;
+}
+.h2-f-photo img:hover{
+    /* cursor: pointer; */
+}
+.but{
+    width: 60px;
+    height: 60px;
+    border-radius:100px;
+    background: none;
+}
+.but img{
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+
+}
+@media(max-width:500px){
+    .but{
+        display: none;
+    }
+}
+.cliked{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height:100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    z-index: +1;
+}
+.cliked img{
+    border: solid white 1px;
+    padding: 4px;
+    max-height: 80vh;
+    width: auto;
+}
+.cliked img:hover{
+    max-height: 80vh;
+    width: auto;
+}
+.img-btn{
+    border: none;
+    background: none;
+    padding: 0px;
+}
+.line1{
+    position: relative;
+}
+.line2{
+    position: relative;
+}
+.is-c img{
+    width: 300px;
+    height: auto;
+}
+#right{
+    position: absolute;
+    top: 40%;
+    right: 50px;
+}
+#left{
+    position: absolute;
+    top: 40%;
+    left: 50px;
+}
+#right-d{
+    background:none;
+    position: absolute;
+    top: 40%;
+    right: 50px;
+}
+#left-d{
+    background:none;
+    position: absolute;
+    top: 40%;
+    left: 50px;
+}
+.scrollbar{
+    overflow-x:scroll;
+}
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.h-d-photo-1 img {
+    max-height: 334px;
+    width: auto ;
+}
+.h-d-photo-1 img:hover{
+    cursor: pointer;
+}
+
+
+.h-d-photo-2 img {
+    max-height: 265px;
+    width: auto;
+}
+.h-d-photo-2 img:hover{
+    cursor: pointer;
+}
