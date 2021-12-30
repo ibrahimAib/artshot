@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\VideoController;
+use App\Models\About;
 use App\Models\Photo;
 use Illuminate\Support\Facades\Route;
 use Whoops\Run;
@@ -31,7 +33,7 @@ Route::get('/home', function () {
 Route::resource('/photo', PhotoController::class);
 Route::get('/mygear', [PhotoController::class, 'gear']);
 Route::get('/contact', [PhotoController::class, 'contact']);
-Route::get('/about', [PhotoController::class, 'about']);
+Route::resource('/about', AboutController::class);
 
 Route::resource('/videos', VideoController::class);
 // Admin Controller
@@ -40,7 +42,5 @@ Route::get('/createphoto', [AdminController::class, 'createphoto']);
 Route::get('/createvideo', [AdminController::class, 'createvideo']);
 Route::post('/addadmin', [AdminController::class, 'addadmin']);
 Route::get('/admins', [AdminController::class, 'admins']);
-
-// Route::get('/register', function () {
-//     return redirect('/');
-// });
+Route::get('/adabout', [AdminController::class, 'about']);
+Route::get('/newsite', [About::class, 'create']);

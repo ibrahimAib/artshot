@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dgray py-3">
+<nav dir="rtl" class="navbar navbar-expand-md navbar-light bg-white py-3" >
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <img class="" src="image/logo.png" height="120px" alt="">
@@ -14,15 +14,14 @@
             </ul>
 
             <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
                 <!-- Authentication Links -->
-                <li class="nav-item"><a href="/photo" class="nav-link">PHTOT</a></li>
-                <li class="nav-item"><a href="/videos" class="nav-link">VIDEO</a></li>
-                <li class="nav-item"><a href="/mygear" class="nav-link">MY GEAR</a></li>
-                <li class="nav-item"><a href="/contact" class="nav-link">CONTACT</a></li>
-                <li class="nav-item"><a href="/about" class="nav-link">ABOUT</a></li>
-                <li class="nav-item"><a href="/createphoto" class="nav-link">CREATE Photo</a></li>
-                <li class="nav-item"><a href="/createvideo" class="nav-link">CREATE video</a></li>
+                <li class="nav-item"><a href="/photo" class="nav-link">معرض الصور</a></li>
+                <li class="nav-item"><a href="/videos" class="nav-link">معرض الفيديو</a></li>
+                <li class="nav-item"><a href="/mygear" class="nav-link">المعدات</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">تواصل معنا</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link">من نحن</a></li>
+
             </ul>
         </div>
     </div>

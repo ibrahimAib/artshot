@@ -10,7 +10,7 @@
             <th class=" text-left border border-right-0" style="width: 250px">Name</th>
             <th class=" text-left border border-right-0 border-left-0" style="width: 450px">Email</th>
             <th class=" text-left border border-left-0" style="width: 50px">Actions</th>
-       </tr>
+        </tr>
 @foreach ($users as $user)
         <tr>
             <td class=" text-left border" style="width: 10px;">{{$user->id}}</td>
@@ -22,8 +22,8 @@
                     <img src="image/icon/pencil.svg" alt="">    
                 </div>    
             </td>
-       </tr>
-       @endforeach
+        </tr>
+        @endforeach
     </table>
 </div>
 @endsection

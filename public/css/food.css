@@ -152,3 +152,10 @@
         display: none;
     }
 }
+
+.about-img img{
+    max-width: 100%;
+}
+.about-story pre{
+    font-size: 18px;
+}

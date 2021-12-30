@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Photo;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -46,5 +47,11 @@ class AdminController extends Controller
     public function createvideo()
     {
         return view('admin.create-video');
+    }
+    public function about()
+    {
+        $about = About::find(1);
+
+        return view('admin.about-admin', compact('about'));
     }
 }

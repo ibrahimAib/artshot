@@ -1,9 +1,13 @@
 @extends('admin.app-admin')
 @section('content')
 <div class="container">
+    
+    @if (count($photos) != 0)
+    <div class="d-flex justify-content-center my-5">
+        
+        <a class="btn btn-warning" href="/createphoto">أضف صورة</a>
+    </div>
     <div class="d-flex justify-content-center">
-
-        @if (count($photos) != 0)
         @foreach ($photos as $ph)
             <div class="m-1 border p-1">
                 <div class="is-c">
@@ -25,7 +29,7 @@
         @else
             <div class="d-flex flex-column justify-content-center my-5 py-5">
                 <h1 class="text-dark my-5">No Photos</h1>
-                <a class="btn btn-warning" href="/create">Add first photo</a>
+                <a class="btn btn-warning" href="/createphoto">Add first photo</a>
             </div>
         @endif
     </div>

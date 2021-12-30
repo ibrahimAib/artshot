@@ -50,7 +50,7 @@ class PhotoController extends Controller
     public function store(Request $request)
     {
         $comption = request('comption');
-        $photo_path = request('photo_path')->store('uplode', 'public');
+        $photo_path = request('photo_path')->store('upload', 'public');
 
         Photo::create(
             [
@@ -60,7 +60,7 @@ class PhotoController extends Controller
                 'sec' => request('sec')
             ]
         );
-        return redirect('/photo');
+        return redirect('/admin');
     }
 
     /**
@@ -115,9 +115,5 @@ class PhotoController extends Controller
     public function contact()
     {
         return view('contact');
-    }
-    public function about()
-    {
-        return view('about');
     }
 }

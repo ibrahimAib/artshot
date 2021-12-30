@@ -20,10 +20,17 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-white">
-    @include('admin.navbar-admin')
-
-@yield('content')
-
+<div class="d-flex">
+    @if (auth()->user() != null)
+    <div class="col-3">
+            
+        @include('admin.sidebar-admin')
+    </div>
+        @endif
+    <div class="col-8 container">
+    @yield('content')
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 

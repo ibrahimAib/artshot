@@ -18,8 +18,11 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/food.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/blade.css') }}">
+
 </head>
-<body class="bg-light">
+<body class="bg-light" style="color: rgb(90, 90, 90)">
+
 @include('layouts.navbar')
 @yield('content')
 @include('layouts.footer')
