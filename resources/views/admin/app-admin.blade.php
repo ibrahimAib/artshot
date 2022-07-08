@@ -68,7 +68,12 @@
 
         document.getElementById(ddd).style.visibility = "hidden";
     }
-
+    $('#image-1').change(function() {
+        $(this).closest('form').submit();
+    });
+    $('#image-2').change(function() {
+        $(this).closest('form').submit();
+    });
 </script>
 
 

@@ -4,10 +4,10 @@
     background-repeat: no-repeat;
 }
 .bg-dgray{
-    background-color: #332c2d;
+    background-color: #fdfdfd;
 }
 .bg-lgray{
-    background-color: #938e94;
+    background-color: #eeeeee;
 }
 .bg-y{
     color: #e1a32e;
@@ -99,6 +99,10 @@
 }
 .is-c img{
     width: 300px;
+    height: auto;
+}
+.is-cs img{
+    width: 100%;
     height: auto;
 }
 #right{

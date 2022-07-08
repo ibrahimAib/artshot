@@ -16,11 +16,11 @@ class CreateAboutsTable extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('heading')->default('خالد بن عبدالله مصور فوتوغرافي');
-            $table->string('story');
-            $table->string('image_1')->default('upload/contact/image_1.jpg');
-            $table->string('image_2')->default('upload/contact/image_2.jpg');
+            $table->string('story', 10000)->nullable();
+            $table->string('image_1')->default('upload/about/image_1.jpg');
+            $table->string('image_2')->default('upload/about/image_2.jpg');
             $table->timestamps();
         });
     }

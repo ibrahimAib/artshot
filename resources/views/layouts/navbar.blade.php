@@ -1,4 +1,4 @@
-<nav dir="rtl" class="navbar navbar-expand-md navbar-light bg-white py-3" >
+<nav dir="rtl" class="navbar navbar-expand-md navbar-light bg-dgray py-3" >
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <img class="" src="image/logo.png" height="120px" alt="">
@@ -14,9 +14,9 @@
             </ul>
 
             <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto ">
                 <!-- Authentication Links -->
-                <li class="nav-item"><a href="/photo" class="nav-link">معرض الصور</a></li>
+                <li class="nav-item"><a href="/photo" class="nav-link fs-3">معرض الصور</a></li>
                 <li class="nav-item"><a href="/videos" class="nav-link">معرض الفيديو</a></li>
                 <li class="nav-item"><a href="/mygear" class="nav-link">المعدات</a></li>
                 <li class="nav-item"><a href="/contact" class="nav-link">تواصل معنا</a></li>

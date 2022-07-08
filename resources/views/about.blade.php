@@ -10,7 +10,9 @@
         <h2>
             {{$data->heading}}
         </h2>
-        <pre>{{$data->story}}</pre>
+        <pre class="mt-5  text-right">
+{{$data->story}}
+        </pre>
     </div>
 </div>
 </section>

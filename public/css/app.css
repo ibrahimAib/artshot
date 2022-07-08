@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Noto+Kufi+Arabic:wght@300&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v4.6.1 (https://getbootstrap.com/)
@@ -33,7 +35,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-sans-serif: "Noto Kufi Arabic", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -56,7 +58,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -173,7 +175,7 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-
+pre,
 code,
 kbd,
 samp {
@@ -181,7 +183,12 @@ samp {
   font-size: 1em;
 }
 
-
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
 
 figure {
   margin: 0 0 1rem;
@@ -512,11 +519,17 @@ kbd kbd {
   font-size: 100%;
   font-weight: 700;
 }
-pre{
-  white-space: pre-wrap;
-  /* font-size: 50px; */
-}
 
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529;
+}
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
 
 .pre-scrollable {
   max-height: 340px;
@@ -5590,7 +5603,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -5692,7 +5705,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -9934,6 +9947,9 @@ a.text-dark:hover, a.text-dark:focus {
     content: " (" attr(title) ")";
   }
 
+  pre {
+    white-space: pre-wrap !important;
+  }
 
   pre,
 blockquote {

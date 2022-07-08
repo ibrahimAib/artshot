@@ -38,7 +38,19 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if (request('image_2') != null) {
+            $request->file('image_2')->storeAs('/public/upload/about', 'image_2.jpg');
+            $data = About::find(1);
+            $data->update([
+                'image_2' => 'upload/about/image_2.jpg'
+            ]);
+        }
+        if (request('image_1') != null) {
+            $request->file('image_1')->storeAs('/public/upload/about', 'image_1.jpg');
+        }
+
+
+        return redirect('/adabout');
     }
 
     /**

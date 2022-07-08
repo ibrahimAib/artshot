@@ -44,3 +44,7 @@ Route::post('/addadmin', [AdminController::class, 'addadmin']);
 Route::get('/admins', [AdminController::class, 'admins']);
 Route::get('/adabout', [AdminController::class, 'about']);
 Route::get('/newsite', [About::class, 'create']);
+
+
+
+Route::get('/first', [AdminController::class, 'firststart']);
